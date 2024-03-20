@@ -52,7 +52,7 @@ class Page3Fragment : Fragment() {
         binding.txtName.text = user.name
         binding.txtGender.text = if (user.gender == "F") "Female" else "Male"
         binding.txtAge.text = user.age.toString()
-        binding.txtCountry.text = user.country // TODO
+        binding.txtCountry.text = user.country + " - " + user.countryName
     }
 
 }

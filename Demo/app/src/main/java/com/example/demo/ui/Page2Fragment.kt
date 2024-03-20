@@ -8,6 +8,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.example.demo.PhotoAdapter
 import com.example.demo.R
 import com.example.demo.UserViewModel
 import com.example.demo.databinding.FragmentPage2Binding
@@ -26,10 +27,16 @@ class Page2Fragment : Fragment() {
         // ----------------------------------------------------------------------------------------
 
         // TODO: Setup RecyclerView with adapter
+        val adapter = PhotoAdapter { h , u ->
+            h.binding.root.setOnClickListener{ more(u.id)}
+        }
 
+        binding.rv.adapter = adapter
 
         // TODO: Observe live data
-
+        vm.usersLiveData.observe(viewLifecycleOwner) {
+            adapter.submitList(it)
+        }
 
         // ----------------------------------------------------------------------------------------
 
