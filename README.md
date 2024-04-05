@@ -1,7 +1,7 @@
 # Demo
 ![Demo](Prac4.gif)
 
-
+# Instruction
 1. Add in Additional plugins on `build.gradle.kts`
     
     ```kotlin
@@ -63,7 +63,7 @@
     <aside>
     💡 kotlinx stand for kotlin extra (extra functionality that kotlin does not provide 
     </aside>
-    
+    <br />
     <aside>
     💡 coil is use for load the internet image   
     </aside>
