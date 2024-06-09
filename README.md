@@ -78,3 +78,7 @@
 ![extra_1](extra_1.jpeg)
 ![extra_2](extra_2.jpeg)
 ![extra_3](extra_3.jpeg)
+
+```
+When you run, if you find out any error in running device, close android studio(clean in task manager) and wipe phone data and rerun
+```
